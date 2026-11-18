@@ -1,0 +1,29 @@
+
+Spreadsheet runtime warmup failed during python startup
+Traceback (most recent call last):
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/patches/warm_spreadsheet_runtime_on_startup.py", line 26, in warm_spreadsheet_runtime_on_startup
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 785, in warm_spreadsheet_runtime
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 718, in _warm_feature_flows
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 509, in _warm_drawing_and_image_flows
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/generated/interface/models.py", line 32861, in bring_to_front
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/remote.py", line 764, in __call__
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/client.py", line 175, in call
+artifact_tool.rpc.client.RemoteError: Element ordering requires an owning element collection.
+test_invalid_length (test_protocol.ProtocolTests.test_invalid_length) ... ok
+test_utf8_roundtrip (test_protocol.ProtocolTests.test_utf8_roundtrip) ... ok
+test_broadcast_private_duplicate_and_db (test_server.ServerTests.test_broadcast_private_duplicate_and_db) ... 2026-11-18 13:17:16,103 INFO <Server sockets=(<asyncio.TransportSocket fd=10, family=2, type=1, proto=6, laddr=('127.0.0.1', 35699)>,)> is serving
+2026-11-18 13:17:16,103 INFO Server listening on 127.0.0.1:35699
+2026-11-18 13:17:16,111 INFO Connected: Ali (('127.0.0.1', 60432))
+2026-11-18 13:17:16,117 INFO Connected: Vali (('127.0.0.1', 60436))
+2026-11-18 13:17:16,124 INFO Connected: Salima (('127.0.0.1', 60444))
+2026-11-18 13:17:16,338 INFO Disconnected: Ali
+2026-11-18 13:17:16,339 INFO Connection ended ('127.0.0.1', 60436): [Errno 32] Broken pipe
+2026-11-18 13:17:16,340 INFO Disconnected: Vali
+2026-11-18 13:17:16,340 INFO Connection ended ('127.0.0.1', 60444): [Errno 104] Connection reset by peer
+2026-11-18 13:17:16,340 INFO Disconnected: Salima
+ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.256s
+
+OK

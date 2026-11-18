@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "github_project",
+			"path": "../github_project"
+		},
+		{
+			"name": "LAN_Messenger",
+			"path": "."
+		}
+	],
+	"settings": {}
+}
